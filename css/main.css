@@ -193,6 +193,7 @@ header {
 }
 
 .catalog .button:hover {
+  color: #ffffff;
   background: #e74246;
 }
 
