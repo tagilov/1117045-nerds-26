@@ -12,22 +12,130 @@ body {
 a {
   color: #000000;
   text-decoration: none;
-  font-size: 16px;
+}
+
+li {
+  list-style-type: none;
+}
+.nav a:hover,
+.nav a:focus {
+  background-color: #14e1e3;
+}
+
+.nav {
   line-height: 30px;
 }
 
-.header {
- background: #eeeeee;
+header {
+  background-color: #eeeeee;
 }
 
 .slider {
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 
-.shop {
-  background: #eeeeee;
+.slider-title {
+  font-size: 55px;
+  line-height: 55px;
 }
 
-.slider-btn {
-  border-bottom: 2px;
+.slider-content {
+  margin-bottom: 27px;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.about-title {
+  font-size: 45px;
+  line-height:45px;
+}
+
+.about-subtitle{
+  font-weight: bold;
+}
+
+.info-percent {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.info-title {
+  font-weight: bold;
+}
+
+.info-confidence {
+  line-height: 18px;
+}
+
+.contacts-title {
+  line-height: 30px;
+}
+
+.contacts-text {
+  line-height: 18px;
+}
+
+.footer-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.form-text {
+  line-height: 18px;
+}
+.sorting-title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.filter-legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.catalog-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.radio-text {
+  line-height: 20px;
+}
+.checkbox-text {
+  line-height: 20px;
+}
+.button {
+  color: #ffffff;
+  background-color: #fb565a;
+  line-height: 18px;
+  padding: 18px 60px 18px 60px;
+  border-radius: 4px;
+}
+
+.slider .button {
+  padding: 18px 53px 18px 53px;
+}
+
+.services .button {
+  padding: 18px 40px 18px 40px;
+}
+.contacts .button {
+  padding: 18px 45px 18px 45px;
+}
+.form .button {
+  border: none;
+  padding: 18px 83px 18px 83px;
+}
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-yellow {
+  background-color: #efc84a;
 }
