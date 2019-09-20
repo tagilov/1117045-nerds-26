@@ -188,6 +188,19 @@ header {
   color: #666666;
 }
 
+.catalog .button {
+  padding: 18px 61px 18px 61px;
+}
+
+.catalog .button:hover {
+  background: #e74246;
+}
+
+.catalog .button:active {
+  color: #ffffff;
+  background: #d7373b;
+}
+
 .catalog-title {
   font-size: 18px;
   line-height: 30px;
@@ -279,6 +292,16 @@ header {
 
 .checkbox-text {
   line-height: 20px;
+}
+
+.footer-img a:hover {
+  color: #ffffff;
+  background: #e74246;
+}
+
+.footer-img a:active {
+  color: #e37376;
+  background: #d7373b;
 }
 
 .footer-img a {
