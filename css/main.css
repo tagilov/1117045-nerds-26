@@ -26,10 +26,27 @@ a {
   text-transform: uppercase;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  border-bottom: 2px solid #fb565a;
+.nav-link:hover {
+ color: #fb565a;
 
+}
+
+.nav-link:active {
+  color: #bdbdbd;
+}
+
+.nav-link-active {
+  border-bottom: 2px solid #fb565a;
+}
+
+.button:hover {
+  color: #ffffff;
+  background: #e74246;
+}
+
+.button:active {
+  color: #e06366;
+  background: #d7373b;
 }
 
 .slider .button {
@@ -55,13 +72,28 @@ a {
   background-color: #00ca74;
 }
 
+.button-green:hover {
+  color: #ffffff;
+  background: #00bc6c;
+}
+
+.button-green:active {
+  color: #4dc491;
+  background: #00aa62;
+}
+
 .button-yellow {
   background-color: #efc84a;
 }
 
-.button:hover,
-.button:focus {
-  border: 1px solid #640508;
+.button-yellow:hover {
+  color: #ffffff;
+  background: #eab534;
+}
+
+.button-yellow:active {
+  color: #edc265;
+  background: #e5a722;
 }
 
 li {
@@ -159,6 +191,10 @@ header {
 .contacts-text {
   line-height: 18px;
   color: #666666;
+}
+
+.logo-img {
+
 }
 
 .filter-legend {
