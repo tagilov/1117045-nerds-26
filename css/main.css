@@ -47,6 +47,7 @@ a {
 .button:active {
   color: #e06366;
   background: #d7373b;
+  box-shadow: 0 5px 0 #c13135 inset;
 }
 
 .slider .button {
@@ -71,6 +72,7 @@ a {
   color: #959595;
   background-color: #d5d5d5;
   border: none;
+  box-shadow: 0 5px 0 #bfbfbf inset;
 }
 
 .settings .button {
@@ -91,6 +93,7 @@ a {
 .button-green:active {
   color: #4dc491;
   background: #00aa62;
+  box-shadow: 0 5px 0 #009958 inset;
 }
 
 .button-yellow {
@@ -105,6 +108,7 @@ a {
 .button-yellow:active {
   color: #edc265;
   background: #e5a722;
+  box-shadow: 0 5px 0 #ce961f inset;
 }
 
 li {
@@ -217,6 +221,10 @@ header {
   color: #b2b2b2;
 }
 
+.catalog-img:hover {
+  box-shadow: 2px 2px 5px 5px #eeeeee
+}
+
 .contacts-title {
   line-height: 30px;
 }
@@ -287,6 +295,18 @@ header {
   line-height: 18px;
 }
 
+.sorting-list a{
+  color: #b2b2b2;
+}
+
+.sorting-list a:hover {
+  color: #a6a6a6;
+}
+
+.sorting-list a:active {
+  color: #231f20;
+}
+
 .radio-text {
   line-height: 20px;
 }
@@ -322,3 +342,40 @@ header {
 
 }
 
+.pagination-item a:hover {
+  color: #000000;
+  background: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: #b7b7b7;
+  background: #d5d5d5;
+}
+
+.filter-item {
+  color: #b8b8b8;
+}
+
+.filter-item:hover {
+  color: #4d4d4d;
+}
+
+.filter-item:disabled {
+  color: #ededed;
+}
+
+.filter input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.filter input:hover {
+  border-color: #b4b9bb;
+}
+
+.filter input:focus {
+  border-color: #000000;
+}
