@@ -6,7 +6,7 @@ body {
   line-height: 24px;
   color: #000000;
 
- aaa  background: white url("../img/nerds-index.jpg") no-repeat top center;
+  background: white url("../img/nerds-index.jpg") no-repeat top center;
 }
 
 a {
@@ -139,7 +139,6 @@ li {
   margin-bottom: 27px;
   display: none;
 }
-
 .slide-active {
   display: block;
 }
@@ -416,21 +415,10 @@ li {
   margin-left: 20px;
 }
 
-.slider .container {
-  background: chartreuse;
-}
-
-.slider-title {
-
-  background: #00bc6c;
-
-}
-
-.slider-text {
-
-  background: red;
-}
-
 .slider-img {
-  background: darkorange;
- }
+  display: none;
+
+}
+
+
+
