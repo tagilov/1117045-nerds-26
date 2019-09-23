@@ -6,7 +6,7 @@ body {
   line-height: 24px;
   color: #000000;
 
-  background-color: #ffffff;
+ aaa  background: white url("../img/nerds-index.jpg") no-repeat top center;
 }
 
 a {
@@ -51,7 +51,7 @@ a {
 }
 
 .slider .button {
-  padding: 18px 60px 18px 60px;
+  padding: 18px 54px 18px 60px;
 }
 
 .contacts .button {
@@ -121,12 +121,12 @@ li {
   text-transform: uppercase;
 }
 
-header {
-  background-color: #eeeeee;
+.header {
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .slider {
-  background-color: #eeeeee;
+  background-color: rgba(0, 0, 0, .1);
 }
 
 .slider-title {
@@ -137,10 +137,16 @@ header {
 
 .slider-content {
   margin-bottom: 27px;
+  display: none;
+}
+
+.slide-active {
+  display: block;
 }
 
 .slider-text {
   color: #283136;
+  font-weight: 500;
 }
 
 .services-text {
@@ -331,7 +337,6 @@ header {
   height: 60px;
   background: #e1e1e1;
   border-radius: 50px;
-
 }
 
 .pagination-item a {
@@ -379,3 +384,53 @@ header {
 .filter input:focus {
   border-color: #000000;
 }
+
+.container {
+ width: 1200px;
+ margin: 0 auto;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 25px;
+  margin-top: 60px;
+  margin-right: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin-right: 285px;
+
+}
+.header-logo{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.slider .container {
+  background: chartreuse;
+}
+
+.slider-title {
+
+  background: #00bc6c;
+
+}
+
+.slider-text {
+
+  background: red;
+}
+
+.slider-img {
+  background: darkorange;
+ }

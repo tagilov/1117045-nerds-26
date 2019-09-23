@@ -5,87 +5,112 @@
     <title>HTML Academy: Нёрдс</title>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
   </head>
 
   <body>
     <header class="header">
-      <a class="header-logo">
-        <img src="img/nerds-logo.svg" alt="логотип" />
-      </a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link " href="studio.html">студия</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="customers.html">клиенты</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="store.html">магазин</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacts.html">контакты</a>
-          </li>
-        </ul>
-        <a class="nav-link nav-cart" href="cart.html">Корзина</a>
-      </nav>
+      <div class="container">
+        <a class="header-logo">
+          <img src="img/nerds-logo.svg" alt="логотип" />
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link " href="studio.html">студия</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="customers.html">клиенты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">магазин</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">контакты</a>
+            </li>
+          </ul>
+          <a class="nav-link nav-cart" href="cart.html">Корзина</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="slider">
-        <article class="slider-content">
-          <h1 class="slider-title">Долго, дорого, скрупулезно.</h1>
-          <p class="slider-text">
-            Математически выверенный дизайн для вашего сайта или мобильного
-            приложения.
-          </p>
-          <a class="button" href="#">Узнать больше</a>
-          <img class="slider-img" src="img/nerds-index-slide1.png" />
-        </article>
-        <article class="slider-content">
-          <h1 class="slider-title">Любим математику как никто другой</h1>
-          <p class="slider-text">
-            Никакого креатива, только математические формулы для расчета
-            идеальных пропорций.
-          </p>
-          <a class="button" href="#">Узнать больше</a>
-          <img class="slider-img" src="img/nerds-index-slide2.png" />
-        </article>
-        <article class="slider-content">
-          <h1 class="slider-title">Только ночь, только хардкор</h1>
-          <p class="slider-text">
-            Работать днем, как все? Мы против этого. Ближе к полуночи работа
-            только начинается.
-          </p>
-          <a class="button" href="#">Узнать больше</a>
-          <img class="slider-img" src="img/nerds-index-slide3.png" />
-        </article>
+        <div class="container">
+          <article class="slider-content slide-active">
+            <h1 class="slider-title">Долго, дорого,<br> скрупулезно.</h1>
+            <p class="slider-text">
+                Математически выверенный дизайн<br> для вашего сайта или мобильного
+              приложения.
+            </p>
+            <a class="button" href="#">Узнать больше</a>
+            <img class="slider-img" src="img/nerds-index-slide1.png" />
+        </div>
+          </article>
+          <article class="slider-content">
+            <h1 class="slider-title">Любим математику как никто другой</h1>
+            <p class="slider-text">
+               Никакого креатива, только математические формулы для расчета
+              идеальных пропорций.
+            </p>
+            <a class="button" href="#">Узнать больше</a>
+            <img class="slider-img" src="img/nerds-index-slide2.png" />
+          </article>
+          <article class="slider-content">
+            <h1 class="slider-title">Только ночь, только хардкор</h1>
+            <p class="slider-text">
+              Работать днем, как все? Мы против этого. Ближе к полуночи работа
+              только начинается.
+            </p>
+            <a class="button" href="#">Узнать больше</a>
+            <img class="slider-img" src="img/nerds-index-slide3.png" />
+          </article>
       </section>
       <section class="services">
         <div class="services-item">
-          <img class="services-img" src="img/illustration-1.jpg" alt="веб сайты" />
+          <img
+            class="services-img"
+            src="img/illustration-1.jpg"
+            alt="веб сайты"
+          />
           <h3 class="services-title">ВЕБ САЙТЫ</h3>
-          <p class="services-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <p class="services-text">
+            Мир никогда не будет прежним после того как увидит ваш сайт!
+          </p>
           <a class="button" href="#">Заказать</a>
         </div>
         <div class="services-item">
-          <img class="services-img" src="img/illustration-2.jpg" alt="приложения" />
+          <img
+            class="services-img"
+            src="img/illustration-2.jpg"
+            alt="приложения"
+          />
           <h3 class="services-title">ПРИЛОЖЕНИЯ</h3>
-          <p class="services-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+          <p class="services-text">
+            Покорите топ-10 приложений в AppStore и Google Play
+          </p>
           <a class="button button-green" href="#">Заказать</a>
         </div>
         <div class="services-item">
-          <img class="services-img" src="img/illustration-3.jpg" alt="презентации" />
+          <img
+            class="services-img"
+            src="img/illustration-3.jpg"
+            alt="презентации"
+          />
           <h3 class="services-title">ПРЕЗЕНТАЦИИ</h3>
-          <p class="services-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+          <p class="services-text">
+            Вы даже не подозреваете, насколько вы изумительны!
+          </p>
           <a class="button button-yellow" href="#">Заказать</a>
         </div>
       </section>
       <section>
         <div class="about">
-          <h2 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+          <h2 class="about-title">
+            Мы — маленькая, но гордая дизайн-студия из Краснодара.
+          </h2>
           <p class="about-text">
             Исповедуем принципы минимализма и чистоты. Ставим математический
             расчет превыше креатива. Работаем не покладая рук, как роботы.
@@ -94,11 +119,17 @@
           <ul class="about-list">
             <li class="about-item">-Веб-сайтов любой сложности</li>
             <li class="about-item">-Мобильных приложений для IOS и Android</li>
-            <li class="about-item">-Слайдшоу и видео для корпоротивных презентаций</li>
+            <li class="about-item">
+              -Слайдшоу и видео для корпоротивных презентаций
+            </li>
           </ul>
         </div>
         <div class="info">
-          <img class="info-img" src="img/nerds-illustration.jpg" alt="илюстрация-нёрдс" />
+          <img
+            class="info-img"
+            src="img/nerds-illustration.jpg"
+            alt="илюстрация-нёрдс"
+          />
           <h4 class="info-title">с 2004 года любим точность во всем:</h4>
           <table class="info-table">
             <tr class="info-percent">
@@ -116,8 +147,12 @@
       </section>
       <section class="logo">
         <ul class="logo-list">
-          <li class="logo-img"><img src="img/logo-1.png" alt="html-академия" /></li>
-          <li class="logo-img"><img src="img/logo-2.png" alt="бородински" /></li>
+          <li class="logo-img">
+            <img src="img/logo-1.png" alt="html-академия" />
+          </li>
+          <li class="logo-img">
+            <img src="img/logo-2.png" alt="бородински" />
+          </li>
           <li class="logo-img"><img src="img/logo-3.png" alt="пинк" /></li>
           <li class="logo-img"><img src="img/logo-4.png" alt="мишка" /></li>
         </ul>
@@ -125,7 +160,9 @@
       <section class="contacts">
         <img class="contacts-img" src="img/map-marker.png" alt="навигация" />
         <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-        <p class="contacts-text">191186, Санкт-Петербург, ул.Б.Конюшенная,Д. 19/8</p>
+        <p class="contacts-text">
+          191186, Санкт-Петербург, ул.Б.Конюшенная,Д. 19/8
+        </p>
         <p class="contacts-text">тел. +7(812)275-75-75</p>
         <a class="button" href="#">напишите нам</a>
       </section>
