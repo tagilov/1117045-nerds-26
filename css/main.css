@@ -6,12 +6,16 @@ body {
   line-height: 24px;
   color: #000000;
 
-  background: white url("../img/nerds-index.jpg") no-repeat top center;
+  ttt background: white url("../img/nerds-index.jpg") no-repeat top center;
 }
 
 a {
   color: #000000;
   text-decoration: none;
+}
+
+h3 {
+  margin: 0;
 }
 
 
@@ -119,26 +123,30 @@ li {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+
 }
 
 .header {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: transparent;
 }
 
 .slider {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: transparent;
+  height: 415px;
 }
 
 .slider-title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0;
 }
 
 .slider-content {
   margin-bottom: 27px;
   display: none;
 }
+
 .slide-active {
   display: block;
 }
@@ -146,35 +154,51 @@ li {
 .slider-text {
   color: #283136;
   font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 35px;
+  margin-top: 15px;
 }
 
 .services-text {
   color: #283136;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  padding-top: 2px;
+
 }
 
 .services-title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
+  margin-top: 22px;
+  margin-bottom: 13px;
 }
 
 .about-title {
   font-size: 45px;
   line-height:45px;
   font-weight: 500;
+  padding-top: 45px;
+  margin-bottom: 0px;
+
 }
 
 .about-subtitle{
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 39px;
+
 }
 
 .about-text {
   color: #283136;
+  margin-top: 32px;
 }
 
 .about-item {
   color: #283136;
+  margin-top: 24px;
 }
 
 .info-percent {
@@ -385,9 +409,10 @@ li {
 }
 
 .container {
- width: 1200px;
+ width: 1158px;
  margin: 0 auto;
 }
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -399,8 +424,7 @@ li {
   justify-content: space-between;
   align-items: center;
   min-height: 25px;
-  margin-top: 60px;
-  margin-right: 20px;
+  padding-top: 60px;
 }
 
 .nav-list {
@@ -411,14 +435,66 @@ li {
 
 }
 .header-logo{
-  margin-top: 50px;
-  margin-left: 20px;
+  padding-top: 50px;
 }
 
 .slider-img {
   display: none;
+}
 
+.slider-content {
+  min-height: 267px;
+  padding-top: 70px;
 }
 
 
+.services .container {
+  width: 1098px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 85px;
+  margin-right: 323px;
+  margin-bottom: 65px;
 
+}
+
+.services-item {
+  min-height: 350x;
+  min-width: 300px;
+}
+
+.about-block .container {
+  height: 530px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+
+.about {
+  width: 798px;
+
+}
+.info {
+ width: 360px;
+ margin-top: 5px;
+}
+
+.logo .container {
+  display: flex;
+ border-top: 2px solid #eeeeee;
+ border-bottom: 2px solid #eeeeee;
+
+}
+.logo-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.logo-img {
+  width: 300px;
+  height: 182px;
+
+
+}
