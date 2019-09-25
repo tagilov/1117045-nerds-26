@@ -6,7 +6,11 @@ body {
   line-height: 24px;
   color: #000000;
 
-  ttt background: white url("../img/nerds-index.jpg") no-repeat top center;
+<!-- background: white url("../img/nerds-index.jpg") no-repeat top center;
+}
+
+*{ ффф
+  outline: 1px dotted #e74246;
 }
 
 a {
@@ -18,6 +22,9 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  margin: 0;
+}
 
 .button {
   color: #ffffff;
@@ -55,16 +62,23 @@ h3 {
 }
 
 .slider .button {
-  padding: 18px 54px 18px 60px;
+  padding: 14px 54px 14px 54px;
+  margin-left: 20px;
 }
 
 .contacts .button {
   line-height: 18px;
-  padding: 18px 45px 18px 45px;
+  padding: 16px 44px 16px 44px;
+  display: block;
+  margin-top: 30px;
 }
 
 .form .button {
   padding: 18px 83px 18px 83px;
+}
+
+.services .button {
+  padding: 15px 40px 15px 40px;
 }
 
 .settings .button:hover {
@@ -128,23 +142,27 @@ li {
 
 .header {
   background-color: transparent;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .slider {
   background-color: transparent;
-  height: 415px;
+  height: 425px;
 }
 
 .slider-title {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
+  padding-left: 20px;
 }
 
 .slider-content {
   margin-bottom: 27px;
   display: none;
+
 }
 
 .slide-active {
@@ -154,16 +172,19 @@ li {
 .slider-text {
   color: #283136;
   font-weight: 500;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 35px;
   margin-top: 15px;
+  margin-left: 21px;
 }
 
 .services-text {
   color: #283136;
   margin-bottom: 50px;
   margin-top: 0px;
+
   padding-top: 2px;
+  height: 45px;
 
 }
 
@@ -171,34 +192,38 @@ li {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  margin-top: 22px;
+  margin-top: 17px;
   margin-bottom: 13px;
 }
 
 .about-title {
   font-size: 45px;
   line-height:45px;
-  font-weight: 500;
-  padding-top: 45px;
+  font-weight: 500px;
+  padding-top: 38px;
+  padding-left: 20px;
   margin-bottom: 0px;
 
 }
 
-.about-subtitle{
+.about-subtitle {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 39px;
-
+  padding-left: 20px;
 }
 
 .about-text {
   color: #283136;
-  margin-top: 32px;
+  margin-top: 33px;
+  padding-left: 20px;
+
 }
 
 .about-item {
   color: #283136;
   margin-top: 24px;
+  padding-left: 17px;
 }
 
 .info-percent {
@@ -209,6 +234,7 @@ li {
 .info-title {
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .info-confidence {
@@ -255,12 +281,17 @@ li {
 }
 
 .contacts-title {
+  font-size: 18px;
   line-height: 30px;
+  margin-bottom: 25px;
+  font-weight: bold;
 }
 
 .contacts-text {
   line-height: 18px;
   color: #666666;
+  padding: 0;
+  margin-bottom: 20px;
 }
 .logo-img {
   opacity: 0.2;
@@ -293,11 +324,17 @@ li {
   line-height: 22px;
   color: #283136;
 }
+.filter-fieldset {
+  width: 260px;
+}
 
 .footer-title {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+  margin: 0;
+  margin-top: 15px;
+  margin-right: 215px;
 }
 
 .footer-text {
@@ -356,8 +393,8 @@ li {
 
 .footer-img a {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background: #e1e1e1;
   border-radius: 50px;
 }
@@ -409,7 +446,7 @@ li {
 }
 
 .container {
- width: 1158px;
+ width: 1200px;
  margin: 0 auto;
 }
 
@@ -435,7 +472,11 @@ li {
 
 }
 .header-logo{
-  padding-top: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.nav-cart {
+  padding-right: 20px;
 }
 
 .slider-img {
@@ -443,32 +484,37 @@ li {
 }
 
 .slider-content {
-  min-height: 267px;
+  min-height: 270px;
   padding-top: 70px;
 }
 
+.services {
+  margin-right: 60px;
+}
 
 .services .container {
   width: 1098px;
   height: 350px;
   display: flex;
   justify-content: space-between;
-  margin-top: 85px;
-  margin-right: 323px;
-  margin-bottom: 65px;
+  margin-top: 80px;
+
 
 }
 
 .services-item {
   min-height: 350x;
   min-width: 300px;
+  margin: o;
+
 }
 
 .about-block .container {
-  height: 530px;
+  height: 525px;
   display: flex;
   justify-content: space-between;
   margin-top: 75px;
+  border-top: solid 2px #eeeeee;
 }
 
 
@@ -477,24 +523,79 @@ li {
 
 }
 .info {
- width: 360px;
- margin-top: 5px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.info-img {
+  margin-top: 35px;
+  margin-left: 90px;
 }
 
 .logo .container {
   display: flex;
- border-top: 2px solid #eeeeee;
- border-bottom: 2px solid #eeeeee;
-
 }
+
 .logo-list {
   display: flex;
+  justify-content: space-between;
+  text-align: center;
   margin: 0;
   padding: 0;
+  border-top: solid 2px #eeeeee;
+  border-bottom: solid 2px #eeeeee;
 }
+
 .logo-img {
   width: 300px;
   height: 182px;
+}
 
+.shop {
+  text-align: center;
+  height: 223px;
+  width: 1200px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
 
+.contacts-img {
+  width: 1440px;
+  margin-left: 180px;
+  margin-top: 75px;
+  display: none;
+}
+
+.contacts {
+  padding-top: 50px;
+  margin-left: 40px;
+  padding-bottom: 50px;
+  background: url("../img/map-marker.png") no-repeat top center;
+}
+
+.contacts-block {
+  width: 225px;
+  padding: 50px;
+  padding-bottom: 50px;
+  background: #ffffff;
+}
+
+.logo {
+  margin-bottom: 80px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 218px;
+  margin-left: 280px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  min-height: 85px;
+  width: 260px;;
 }
