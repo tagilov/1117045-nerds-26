@@ -36,10 +36,10 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="main-container">
       <h1 class="shop">Магазин готовых шаблонов</h1>
-      <section class="settings">
-        <div class="container">
+      <div class="container">
+        <section class="settings">
           <form
             class="filter"
             method="get"
@@ -165,75 +165,76 @@
             </fieldset>
             <button class="button" type="submit">ПОКАЗАТЬ</button>
           </form>
-        </div>
-      </section>
-      <section>
-        <div class="sorting">
-          <h3 class="sorting-title">сортировать:</h3>
-          <ul class="sorting-list">
-            <li class="sorting-item"><a href="#">по цене</a></li>
-            <li class="sorting-item"><a href="#">по типу</a></li>
-            <li class="sorting-item"><a href="#">по названию</a></li>
+        </section>
+        <section class="sorting-content">
+          <div class="sorting">
+            <h3 class="sorting-title">сортировать:</h3>
+            <ul class="sorting-list">
+              <li class="sorting-item"><a href="#">по цене</a></li>
+              <li class="sorting-item"><a href="#">по типу</a></li>
+              <li class="sorting-item"><a href="#">по названию</a></li>
+            </ul>
+            <ul>
+              <a href="#"></a>
+              <a href="#"></a>
+            </ul>
+          </div>
+          <ul class="catalog">
+            <li class="catalog-item">
+              <img class="catalog-img" src="img/img-sedona.jpg" alt="седона" />
+              <a class="catalog-title" href="#">Sedona</a>
+              <p class="catalog-text">Информационный сайт для туристов</p>
+              <a class="button" href="#">9 900 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img class="catalog-img" src="img/img-pink.jpg" alt="пинк" />
+              <a class="catalog-title" href="#">Pink App</a>
+              <p class="catalog-text">
+                Продуктовый лендинг приложения для iOS и Android
+              </p>
+              <a class="button" href="#">9 900 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img
+                class="catalog-img"
+                src="img/img-barbershop.jpg"
+                alt="барбершоп"
+              />
+              <a class="catalog-title" href="#">Barbershop</a>
+              <p class="catalog-text">Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button" href="#">9 900 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img class="catalog-img" src="img/img-mishka.jpg" alt="мишка" />
+              <a class="catalog-title" href="#">MISHKA</a>
+              <p class="catalog-text">Интернет-магазин вязаных игрушек</p>
+              <a class="button" href="#">9 900 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img class="catalog-img" src="img/img-aplus.jpg" alt="аплюс" />
+              <a class="catalog-title" href="#">A Plus</a>
+              <p class="catalog-text">Лендинг курсов повышения квалификации</p>
+              <a class="button" href="#">9 900 РУБ.</a>
+            </li>
+            <li class="catalog-item">
+              <img class="catalog-img" src="img/img-kvast.jpg" alt="кваст" />
+              <a class="catalog-title" href="#">КВАСТ</a>
+              <p class="catalog-text">
+                Промо-сайт производителя крафтового кваса
+              </p>
+              <a class="button" href="#">9 900 РУБ.</a>
+            </li>
           </ul>
-          <ul>
-            <a href="#"></a>
-            <a href="#"></a>
+          <ul class="pagination-list">
+            <li class="pagination-item"><a href="#">1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">следующая</a></li>
           </ul>
-        </div>
-        <ul class="catalog">
-          <li class="catalog-item">
-            <img class="catalog-img" src="img/img-sedona.jpg" alt="седона" />
-            <a class="catalog-title" href="#">Sedona</a>
-            <p class="catalog-text">Информационный сайт для туристов</p>
-            <a class="button" href="#">9 900 РУБ.</a>
-          </li>
-          <li class="catalog-item">
-            <img class="catalog-img" src="img/img-pink.jpg" alt="пинк" />
-            <a class="catalog-title" href="#">Pink App</a>
-            <p class="catalog-text">
-              Продуктовый лендинг приложения для iOS и Android
-            </p>
-            <a class="button" href="#">9 900 РУБ.</a>
-          </li>
-          <li class="catalog-item">
-            <img
-              class="catalog-img"
-              src="img/img-barbershop.jpg"
-              alt="барбершоп"
-            />
-            <a class="catalog-title" href="#">Barbershop</a>
-            <p class="catalog-text">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button" href="#">9 900 РУБ.</a>
-          </li>
-          <li class="catalog-item">
-            <img class="catalog-img" src="img/img-mishka.jpg" alt="мишка" />
-            <a class="catalog-title" href="#">MISHKA</a>
-            <p class="catalog-text">Интернет-магазин вязаных игрушек</p>
-            <a class="button" href="#">9 900 РУБ.</a>
-          </li>
-          <li class="catalog-item">
-            <img class="catalog-img" src="img/img-aplus.jpg" alt="аплюс" />
-            <a class="catalog-title" href="#">A Plus</a>
-            <p class="catalog-text">Лендинг курсов повышения квалификации</p>
-            <a class="button" href="#">9 900 РУБ.</a>
-          </li>
-          <li class="catalog-item">
-            <img class="catalog-img" src="img/img-kvast.jpg" alt="кваст" />
-            <a class="catalog-title" href="#">КВАСТ</a>
-            <p class="catalog-text">
-              Промо-сайт производителя крафтового кваса
-            </p>
-            <a class="button" href="#">9 900 РУБ.</a>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">следующая</a></li>
-        </ul>
-      </section>
+        </section>
+      </div>
       <section class="contacts">
+          <div class="container">
         <img class="contacts-img" src="img/map-marker.png" alt="навигация" />
         <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
         <p class="contacts-text">
@@ -241,6 +242,7 @@
         </p>
         <p class="contacts-text">тел. +7(812)275-75-75</p>
         <a class="button" href="#">напишите нам</a>
+        </div>
       </section>
     </main>
     <div class="form">
@@ -262,6 +264,7 @@
       </form>
     </div>
     <footer class="footer">
+        <div class="container">
       <ul class="footer-list">
         <li class="footer-img">
           <a href="#"><img src="img/vk-icon.svg"/></a>
@@ -276,6 +279,7 @@
       <div>
         <h2 class="footer-title">Давайте дружить,это выгодно!</h2>
         <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
       </div>
     </footer>
   </body>
