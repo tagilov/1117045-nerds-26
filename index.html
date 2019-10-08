@@ -39,12 +39,7 @@
     <main>
       <section class="slider">
         <div class="container">
-          <div class="slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
-          </div>
-          <article class="slider-content slide-active">
+          <article class="slider-content">
             <div class="slider-box">
               <h1 class="slider-title">Долго, дорого,<br />скрупулезно.</h1>
               <p class="slider-text">
@@ -53,36 +48,69 @@
               </p>
               <a class="button" href="#">Узнать больше</a>
             </div>
-            <div>
-              <img class="slider-img" src="img/nerds-index-slide1.png" />
-            </div>
           </article>
           <article class="slider-content">
             <div class="slider-box">
-              <h1 class="slider-title">Любим математику<br /> как никто другой</h1>
+              <h1 class="slider-title">
+                Любим математику<br />
+                как никто другой
+              </h1>
               <p class="slider-text">
                 Никакого креатива, только математические формулы<br />
                 для расчета идеальных пропорций.
               </p>
               <a class="button" href="#">Узнать больше</a>
             </div>
-            <div>
-              <img class="slider-img" src="img/nerds-index-slide2.png" />
-            </div>
           </article>
           <article class="slider-content">
             <div class="slider-box">
-              <h1 class="slider-title">Только ночь,<br /> только хардкор</h1>
+              <h1 class="slider-title">
+                Только ночь,<br />
+                только хардкор
+              </h1>
               <p class="slider-text">
                 Работать днем, как все? Мы против этого.<br />
                 Ближе к полуночи работа только начинается.
               </p>
               <a class="button" href="#">Узнать больше</a>
             </div>
-            <div>
-              <img class="slider-img" src="img/nerds-index-slide3.png" />
-            </div>
           </article>
+          <input
+            class="visually-hidden"
+            type="radio"
+            id="product-1"
+            name="toggle"
+            checked
+          />
+          <input
+            class="visually-hidden"
+            type="radio"
+            id="product-2"
+            name="toggle"
+          />
+          <input
+            class="visually-hidden"
+            type="radio"
+            id="product-3"
+            name="toggle"
+          />
+          <div class="slider-controls">
+            <label
+              class="slider-controls-item slider-controls-item--1"
+              for="product-1"
+              >Первый</label
+            >
+            <label
+              class="slider-controls-item slider-controls-item--2"
+              for="product-2"
+              >Второй</label
+            >
+            <label
+              class="slider-controls-item slider-controls-item--3"
+              for="product-3"
+              >Третий</label
+            >
+          </div>
         </div>
       </section>
       <section class="services">

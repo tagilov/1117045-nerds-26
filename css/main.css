@@ -109,10 +109,8 @@ li {
   left: 50%;
   bottom: 104px;
   z-index: 100;
-
   width: 160px;
   height: 18px;
-
   text-align: center;
   font-size: 0;
   transform: translateX(-50%);
@@ -125,11 +123,8 @@ li {
   width: 18px;
   height: 18px;
   padding: 8px;
-
   border-radius: 50%;
   cursor: pointer;
-
-
 }
 
 .slider-controls i::after {
@@ -138,10 +133,8 @@ li {
   top: 8px;
   left: 8px;
   z-index: 1;
-
   width: 18px;
   height: 18px;
-
   background: #ffffff;
   border-radius: 50%;
 }
@@ -150,13 +143,70 @@ li {
 
 }
 
+#product-1:checked ~ .slider-content:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .slider-content:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .slider-content:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 4px;
+  height: 4px;
+  margin: -4px;
+  background-color: inherit;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
 .slider {
   background: #eeeeee;
   position: relative;
 }
 
 .slider .container {
-  margin-bottom: 70px;
+  margin-bottom: 72px;
 
 }
 
@@ -177,26 +227,27 @@ li {
 
 .slider-content {
   display: none;
+  height: 430px;
 }
 
-.slider-content:nth-child(1) {
+.slider-content:nth-child(2) {
   display: block;
 }
 
 .slider-content:nth-child(1) {
-  background-image: url("img/nerds-index-slide1.png");
+  background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 18px;
 }
 
 .slider-content:nth-child(2) {
-  background-image: url("img/nerds-index-slide2.png");
+  background-image: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-content:nth-child(3) {
-  background-image: url("img/nerds-index-slide3.png");
+  background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
