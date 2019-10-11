@@ -218,8 +218,10 @@
       </div>
     </footer>
     <div class="form">
+        <button class="modal-close" type="button"></button>
       <h1 class="form-title">Напишите нам</h1>
       <form class="filter" method="post" accept="https://echo.htmlacademy.ru">
+        <div class="form-group">
         <p class="form-text">
           <label for="appointment-name">Ваше имя:</label>
           <input id="appointment-name" type="text" name="name" />
@@ -228,11 +230,12 @@
           <label for="appointment-mail">Ваш e-mail:</label>
           <input id="appointment-mail" type="text" name="mail" />
         </p>
+      </div>
         <p class="form-text">
           <label for="appointment-text">Текст письма:</label>
-          <input id="appointment-text" type="text" name="text" />
+          <textarea id="appointment-text" type="text" name="text"></textarea>
         </p>
-        <button class="button" type="submit">ОТПРАВИТЬ</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </div>
   </body>

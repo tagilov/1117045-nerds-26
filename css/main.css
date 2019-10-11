@@ -9,7 +9,7 @@ body {
  ggg background: white url("../img/nerds-catalog.jpg") no-repeat top center;
 }
 
-*{
+*{ hhh
   outline: 1px dotted #e74246;
 }
 
@@ -936,10 +936,116 @@ sup {
 
 
 .form {
+  position: absolute;
   width: 960px;
   height: 590px;
+  padding: 70px 100px;
+  box-shadow: 0 2px 40px 10px #6d6e6e;
+}
+
+.form-group {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.form-group .form-text {
+  width: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.form .button {
+  padding: 15px 84px;
+}
+
+.form-title {
+  margin: 0 0 45px 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.form-text {
+  margin: 0 0 35px 0;
+  line-height: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 
 }
 
+.form-text input {
+  line-height: 50px;
+}
 
+.form-text textarea {
+  height: 118px;
+}
 
+.form-text label {
+  margin-bottom: 13px;
+}
+
+textarea, input {
+  border: 3px solid #d7dcde;
+  color: #d7dcde;
+  border-radius: 5px;
+  padding: 0 15px;
+  outline: none;
+}
+
+textarea:hover, input:hover {
+  color: #b4b9bb;
+  border-color: #b4b9bb;
+}
+
+textarea:focus, input:focus {
+  color: #000000;
+  border-color: #000000;
+}
+
+textarea {
+  padding-top: 15px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.modal-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 0;
+  top: 90px;
+  right: 100px;
+  outline: none;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 30px;
+  height: 3px;
+  background-color: #fecccd;
+}
+
+.modal-close:hover:before,
+.modal-close:hover:after {
+  background-color: red;
+}
+
+.modal-close:active:before,
+.modal-close:active:after {
+  background-color: #ffeeee;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
