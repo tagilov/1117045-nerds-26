@@ -39,7 +39,8 @@
     <main>
       <section class="slider">
         <div class="container">
-          <article class="slider-content">
+
+          <article class="slider-content slide-active">
             <div class="slider-box">
               <h1 class="slider-title">Долго, дорого,<br />скрупулезно.</h1>
               <p class="slider-text">
@@ -75,42 +76,11 @@
               <a class="button" href="#">Узнать больше</a>
             </div>
           </article>
-          <input
-            class="visually-hidden"
-            type="radio"
-            id="product-1"
-            name="toggle"
-            checked
-          />
-          <input
-            class="visually-hidden"
-            type="radio"
-            id="product-2"
-            name="toggle"
-          />
-          <input
-            class="visually-hidden"
-            type="radio"
-            id="product-3"
-            name="toggle"
-          />
           <div class="slider-controls">
-            <label
-              class="slider-controls-item slider-controls-item--1"
-              for="product-1"
-              >Первый</label
-            >
-            <label
-              class="slider-controls-item slider-controls-item--2"
-              for="product-2"
-              >Второй</label
-            >
-            <label
-              class="slider-controls-item slider-controls-item--3"
-              for="product-3"
-              >Третий</label
-            >
-          </div>
+              <i class="active"></i>
+              <i></i>
+              <i></i>
+            </div>
         </div>
       </section>
       <section class="services">
@@ -228,24 +198,6 @@
         </div>
       </section>
     </main>
-    <div class="form">
-      <h1 class="form-title">Напишите нам</h1>
-      <form class="filter" method="post" accept="https://echo.htmlacademy.ru">
-        <p class="form-text">
-          <label for="appointment-name">Ваше имя:</label>
-          <input id="appointment-name" type="text" name="name" />
-        </p>
-        <p class="form-text">
-          <label for="appointment-mail">Ваш e-mail:</label>
-          <input id="appointment-mail" type="text" name="mail" />
-        </p>
-        <p class="form-text">
-          <label for="appointment-text">Текст письма:</label>
-          <input id="appointment-text" type="text" name="text" />
-        </p>
-        <button class="button" type="submit">ОТПРАВИТЬ</button>
-      </form>
-    </div>
     <footer class="footer">
       <div class="container">
         <ul class="footer-list">
@@ -265,5 +217,23 @@
         </div>
       </div>
     </footer>
+    <div class="form">
+      <h1 class="form-title">Напишите нам</h1>
+      <form class="filter" method="post" accept="https://echo.htmlacademy.ru">
+        <p class="form-text">
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" />
+        </p>
+        <p class="form-text">
+          <label for="appointment-mail">Ваш e-mail:</label>
+          <input id="appointment-mail" type="text" name="mail" />
+        </p>
+        <p class="form-text">
+          <label for="appointment-text">Текст письма:</label>
+          <input id="appointment-text" type="text" name="text" />
+        </p>
+        <button class="button" type="submit">ОТПРАВИТЬ</button>
+      </form>
+    </div>
   </body>
 </html>

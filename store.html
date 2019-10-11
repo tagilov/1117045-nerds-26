@@ -45,22 +45,21 @@
             method="get"
             accept="https://echo.htmlacademy.ru"
           >
-            <fieldset class="filter-fieldset">
-              <legend class="filter-legend">СТОИМОСТЬ:</legend>
-              <input type="range" />
-              <p class="filter-text">
-                <label for="user-from">от</label>
-                <input
-                  id="user-from"
-                  type="text"
-                  name="from"
-                  placeholder="from"
-                />
-              </p>
-              <p class="filter-text">
-                <label for="user-to">до</label>
-                <input id="user-to" type="text" name="to" placeholder="to" />
-              </p>
+          <fieldset class="filter-fieldset">
+              <legend class="filter-legend">Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="filter-fieldset">
               <legend class="filter-legend">Сетка:</legend>
@@ -260,6 +259,25 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="footer-img">
+            <a href="#"><img src="img/vk-icon.svg"/></a>
+          </li>
+          <li class="footer-img">
+            <a href="#"><img src="img/fb-icon.svg"/></a>
+          </li>
+          <li class="footer-img">
+            <a href="#"><img src="img/insta-icon.svg"/></a>
+          </li>
+        </ul>
+        <div>
+          <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
     <div class="form">
       <h1 class="form-title">Напишите нам</h1>
       <form class="filter" method="post" accept="https://echo.htmlacademy.ru">
@@ -278,24 +296,5 @@
         <button class="button" type="submit">ОТПРАВИТЬ</button>
       </form>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <ul class="footer-list">
-          <li class="footer-img">
-            <a href="#"><img src="img/vk-icon.svg"/></a>
-          </li>
-          <li class="footer-img">
-            <a href="#"><img src="img/fb-icon.svg"/></a>
-          </li>
-          <li class="footer-img">
-            <a href="#"><img src="img/insta-icon.svg"/></a>
-          </li>
-        </ul>
-        <div>
-          <h2 class="footer-title">Давайте дружить,это выгодно!</h2>
-          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

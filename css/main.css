@@ -6,7 +6,7 @@ body {
   line-height: 24px;
   color: #000000;
   width: 1440px;
-  background: white url("../img/nerds-index.jpg") no-repeat top center;
+ ggg background: white url("../img/nerds-catalog.jpg") no-repeat top center;
 }
 
 *{
@@ -104,11 +104,84 @@ li {
 
 
 
+
+.radio {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-text {
+  position: relative;
+  padding-left: 38px;
+  color: #363f43;
+}
+
+.radio-text:hover::before {
+  opacity: 1;
+}
+
+.radio-text::before {
+  opacity: 0.4;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid #4d4d4d;
+}
+
+
+.radio:checked + .radio-text::before {
+  box-shadow: inset 0 0 0 4px #fff;
+  background: #4d4d4d;
+}
+
+
+
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-text {
+  position: relative;
+  padding-left: 38px;
+  color: #363f43;
+}
+
+.checkbox-text:hover::before {
+  opacity: 1;
+}
+
+.checkbox-text::before {
+  opacity: 0.4;
+  content: '\00A0';
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  background: #fff;
+  border: 2px solid #4d4d4d;
+}
+
+
+.checkbox:checked + .checkbox-text::before {
+  content: "\2714";
+}
+
+
+
 .slider-controls {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 1000;
   width: 160px;
   height: 18px;
   text-align: center;
@@ -140,24 +213,6 @@ li {
 }
 
 .slider-controls .active::before {
-
-}
-
-#product-1:checked ~ .slider-content:nth-child(1) {
-  display: block;
-}
-
-#product-2:checked ~ .slider-content:nth-child(2) {
-  display: block;
-}
-
-#product-3:checked ~ .slider-content:nth-child(3) {
-  display: block;
-}
-
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -171,6 +226,8 @@ li {
   border-radius: 50%;
 }
 
+
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -178,26 +235,8 @@ li {
   clip: rect(0, 0, 0, 0);
 }
 
-.slider-controls label {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.slider-controls label::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  background: #ffffff;
-  border-radius: 50%;
+.slide-active {
+  display: block;
 }
 
 .slider {
@@ -230,9 +269,7 @@ li {
   height: 430px;
 }
 
-.slider-content:nth-child(2) {
-  display: block;
-}
+
 
 .slider-content:nth-child(1) {
   background-image: url("../img/nerds-index-slide1.png");
@@ -513,9 +550,7 @@ sup {
   margin-top: 20px;
 }
 
-.form {
-  display: none;
-}
+
 
 .shop {
   text-align: center;
@@ -537,27 +572,126 @@ sup {
 .main-container .container {
   display: flex;
   justify-content: space-between;
+}
+
+
+
+
+
+.filter-fieldset ul {
+  margin: 0;
+  padding: 0;
 
 }
 
 .filter-fieldset {
-  border: none;
   margin: 0;
   padding: 0;
+  border: none;
+  /* Для демонстрации */
+  width: 260px;
+
 }
 
 .filter-legend {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 47px;
+
 }
 
-.filter-list {
-  margin: 0;
-  padding: 0;
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
 }
+
+.filter-item {
+  padding: 9px 0;
+}
+
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 8px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
+  margin-bottom: 55px;
+}
+
 
 
 .sorting {
@@ -789,8 +923,9 @@ sup {
   line-height: 36px;
   font-weight: bold;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 22px;
   margin-right: 217px;
+
 }
 
 .footer-text {
@@ -798,3 +933,13 @@ sup {
   margin: 0;
   color: #444444;
 }
+
+
+.form {
+  width: 960px;
+  height: 590px;
+
+}
+
+
+
