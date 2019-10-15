@@ -41,7 +41,6 @@
           <form
             class="filter"
             method="get"
-            accept="https://echo.htmlacademy.ru"
           >
           <fieldset class="filter-fieldset">
               <legend class="filter-legend">СТОИМОСТЬ:</legend>
@@ -172,8 +171,8 @@
               <li class="sorting-item"><a href="#">по названию</a></li>
             </ul>
             <ul class="sorting-dir">
-              <a href="#"><img class="sorting-rotate" src="img/icon-up-dir.svg"/></a>
-              <a href="#"><img src="img/icon-up-dir.svg"/></a>
+              <li><a href="#"><img class="sorting-rotate" src="img/icon-up-dir.svg" alt=""/></a></li>
+              <li><a href="#"><img src="img/icon-up-dir.svg" alt=""/></a></li>
             </ul>
           </div>
           <ul class="catalog">
@@ -186,7 +185,7 @@
               <img class="catalog-img" src="img/img-sedona.jpg" alt="седона" />
               <div class="block-price">
                 <a class="catalog-title" href="#">Sedona</a>
-                <p class="catalog-text">Информационный сайт для&nbspтуристов</p>
+                <p class="catalog-text">Информационный сайт для&nbsp;туристов</p>
                 <a class="button" href="#">9 900 РУБ.</a>
               </div>
             </li>
@@ -291,13 +290,13 @@
       <div class="container">
         <ul class="footer-list">
           <li class="footer-img">
-            <a href="#"><img src="img/vk-icon.svg"/></a>
+            <a href="#"><img src="img/vk-icon.svg" alt=""/></a>
           </li>
           <li class="footer-img">
-            <a href="#"><img src="img/fb-icon.svg"/></a>
+            <a href="#"><img src="img/fb-icon.svg" alt=""/></a>
           </li>
           <li class="footer-img">
-            <a href="#"><img src="img/insta-icon.svg"/></a>
+            <a href="#"><img src="img/insta-icon.svg" alt=""/></a>
           </li>
         </ul>
         <div>
@@ -309,7 +308,7 @@
     <div class="form">
         <button class="modal-close" type="button"></button>
       <h1 class="form-title">Напишите нам</h1>
-      <form class="filter" method="post" accept="https://echo.htmlacademy.ru">
+      <form class="filter" method="post">
         <div class="form-group">
         <p class="form-text">
           <label for="appointment-name">Ваше имя:</label>
@@ -322,7 +321,7 @@
       </div>
         <p class="form-text">
           <label for="appointment-text">Текст письма:</label>
-          <textarea id="appointment-text" type="text" name="text"></textarea>
+          <textarea id="appointment-text" name="text"></textarea>
         </p>
         <button class="button" type="submit">ОТПРАВИТЬ</button>
       </form>
