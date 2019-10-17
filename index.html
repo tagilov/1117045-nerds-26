@@ -4,9 +4,12 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
     <link
-    href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <script src="js/skripts-nerds.js"></script>
   </head>
 
   <body>
@@ -37,7 +40,6 @@
     <main>
       <section class="slider">
         <div class="container">
-
           <article class="slider-content slide-active">
             <div class="slider-box">
               <h1 class="slider-title">Долго, дорого,<br />скрупулезно.</h1>
@@ -74,11 +76,11 @@
               <a class="button" href="#">Узнать больше</a>
             </div>
           </article>
-            <div class="slider-controls">
-              <i class="active"></i>
-              <i></i>
-              <i></i>
-            </div>
+          <div class="slider-controls">
+            <i class="active"></i>
+            <i></i>
+            <i></i>
+          </div>
         </div>
       </section>
       <section class="services">
@@ -184,6 +186,16 @@
         </div>
       </section>
       <section class="contacts">
+        <div class="contacts-maps">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3015178300549!2d30.32196231608619!3d59.93872895255882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1571308614632!5m2!1sru!2s"
+          width="1440"
+          height="416"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+        ></iframe>
+      </div>
         <div class="container">
           <div class="contacts-block">
             <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
@@ -191,7 +203,7 @@
               191186, Санкт-Петербург,<br />ул. Б. Конюшенная, д. 19/8
             </p>
             <p class="contacts-text">тел. +7 (812) 275-75-75</p>
-            <a class="button" href="#">напишите нам</a>
+            <a class="button button-link" href="#">напишите нам</a>
           </div>
         </div>
       </section>
@@ -216,19 +228,19 @@
       </div>
     </footer>
     <div class="form">
-        <button class="modal-close" type="button"></button>
+      <button class="modal-close" type="button"></button>
       <h1 class="form-title">Напишите нам</h1>
       <form class="filter" method="post">
         <div class="form-group">
-        <p class="form-text">
-          <label for="appointment-name">Ваше имя:</label>
-          <input id="appointment-name" type="text" name="name" />
-        </p>
-        <p class="form-text">
-          <label for="appointment-mail">Ваш e-mail:</label>
-          <input id="appointment-mail" type="text" name="mail" />
-        </p>
-      </div>
+          <p class="form-text">
+            <label for="appointment-name">Ваше имя:</label>
+            <input id="appointment-name" type="text" name="fullName" />
+          </p>
+          <p class="form-text">
+            <label for="appointment-mail">Ваш e-mail:</label>
+            <input id="appointment-mail" type="text" name="mail" />
+          </p>
+        </div>
         <p class="form-text">
           <label for="appointment-text">Текст письма:</label>
           <textarea id="appointment-text" name="text"></textarea>
@@ -237,5 +249,4 @@
       </form>
     </div>
   </body>
-  <title></title>
 </html>
