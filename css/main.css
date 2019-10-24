@@ -589,7 +589,6 @@ sup {
   color: #000000;
   padding: 15px 88px 15px 88px;
   background-color: #eeeeee;
-  outline: none;
 }
 
 .filter .button:hover {
@@ -599,16 +598,21 @@ sup {
 .filter .button:active {
   background: #d5d5d5;
   color: #a9a9a9;
-  outline: none;blo
+  outline: none;
   box-shadow: 0 5px 0 #bfbfbf inset;
 }
 
 .filter-fieldset ul {
   padding: 0;
+  margin: 0;
+}
+
+.filter .bar-fieldset {
+  margin-bottom: 55px;
 }
 
 .filter-fieldset {
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
   padding: 0;
   border: none;
   /* Для демонстрации */
@@ -633,9 +637,8 @@ sup {
   padding-bottom: 15px;
 }
 
-.filter-item input:focus ~ label {
-  border: 2px;
-  color: #000000;
+.filter-item input:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .filter-item legend {
