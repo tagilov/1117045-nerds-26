@@ -30,12 +30,13 @@ window.onload = function() {
       close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("form-show");
+        popup.classList.remove("form-error");
       });
 
       form.addEventListener("submit", function (evt) {
         if (!fullName.value || !mail.value || !text.value) {
         evt.preventDefault();
-        console.log("нужно ввести имя и емаил");
+        popup.classList.add("form-error");
         } else {
           if (isStorageSupport) {
           localStorage.setItem("fullName",fullName.value);
@@ -48,6 +49,7 @@ window.onload = function() {
           if (popup.classList.contains("form-show")) {
             evt.preventDefault();
             popup.classList.remove("form-show");
+            popup.classList.remove("form-error");
           }
         }
       })
