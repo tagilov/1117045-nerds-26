@@ -704,7 +704,6 @@ sup {
 
 .sorting-rotate {
   transform: rotate(180deg);
-  height: 10px;
 }
 
 .sorting-dir {
