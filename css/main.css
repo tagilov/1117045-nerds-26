@@ -618,7 +618,7 @@ sup {
 }
 
 .filter-item input:focus + label::before {
-  outline: rgb(59, 153, 252) auto 5px;
+  outline: rgb(38, 160, 218) auto 5px;
 }
 
 .filter-item legend {
