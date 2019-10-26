@@ -39,7 +39,7 @@ li {
 .button:active {
   color: #e48789;
   background: #d7373b;
-  box-shadow: 0 5px 0 #c13135 inset;
+  box-shadow: 0 2px 0 #c13135 inset;
 }
 
 .nav ul {
@@ -196,6 +196,7 @@ li {
 .slider-controls button {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -287,6 +288,7 @@ li {
 
 .slider .button {
   display: inline-block;
+  vertical-align: top;
   line-height: 18px;
   padding: 15px 52px 15px 52px;
   margin-bottom: 80px;
@@ -297,9 +299,9 @@ li {
 }
 
 .slider .button:active {
-  color: #e07476;
+  color: #e06366;
   background: #d7373b;
-  box-shadow: 0 5px 0 #c13135 inset;
+  box-shadow: 0 2px 0 #c13135 inset;
 }
 
 .slider-img {
@@ -343,7 +345,7 @@ li {
 .services .button:active {
   color: #e07476;
   background: #d7373b;
-  box-shadow: 0 5px 0 #c13135 inset;
+  box-shadow: 0 2px 0 #c13135 inset;
 }
 
 .button-green {
@@ -358,7 +360,7 @@ li {
 .services .button-green:active {
   color: #4dc491;
   background: #00aa62;
-  box-shadow: 0 5px 0 #009958 inset;
+  box-shadow: 0 2px 0 #009958 inset;
 }
 
 .button-yellow {
@@ -373,7 +375,7 @@ li {
 .services .button-yellow:active {
   color: #edc265;
   background: #e5a722;
-  box-shadow: 0 5px 0 #ce961f inset;
+  box-shadow: 0 2px 0 #ce961f inset;
 }
 
 .about-title {
@@ -394,6 +396,7 @@ li {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .about-list {
@@ -423,7 +426,7 @@ li {
 
 .about-item {
   margin-top: 15px;
-  padding-left: 3px;
+  padding-left: 10px;
   padding-bottom: 3px;
 }
 
@@ -431,9 +434,9 @@ li {
   position: relative;
   content: "\2014";
   color: red;
-  font-size: 35px;
+  font-size: 34px;
   top: 7px;
-  left: -5px;
+  left: -7px;
 }
 
 .info {
@@ -528,7 +531,7 @@ sup {
   line-height: 30px;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
 }
 
 .contacts-text {
@@ -541,7 +544,8 @@ sup {
 .contacts .button {
   padding: 13px 43px 13px 43px;
   display: inline-block;
-  margin-top: 18px;
+  vertical-align: top;
+  margin-top: 34px;
 }
 
 .shop {
@@ -580,12 +584,16 @@ sup {
   background: #d5d5d5;
   color: #a9a9a9;
   outline: none;
-  box-shadow: 0 5px 0 #bfbfbf inset;
+  box-shadow: 0 2px 0 #bfbfbf inset;
 }
 
 .filter-fieldset ul {
   padding: 0;
   margin: 0;
+}
+
+.bar {
+  width: 70%;
 }
 
 .filter .bar-fieldset {
@@ -809,7 +817,7 @@ sup {
 
 .block-price .button:active {
   background: #d7373b;
-  box-shadow: 0 5px 0 #c13135 inset;
+  box-shadow: 0 2px 0 #c13135 inset;
 }
 
 .catalog-title {
@@ -925,7 +933,7 @@ li.catalog-item:hover .block-price {
 .pagination-list a:active {
   color: #959595;
   background: #d5d5d5;
-  box-shadow: 0 5px 0 #bfbfbf inset;
+  box-shadow: 0 2px 0 #bfbfbf inset;
 }
 
 .pagination-list .active a {
@@ -997,12 +1005,12 @@ li.catalog-item:hover .block-price {
   z-index: 100;
   left: 50%;
   transform: translateX(-50%);
-  width: 960px;
-  height: 510px;
-  padding: 80px 100px;
+  width: 760px;
+  height: 450px;
+  padding: 70px 100px;
   box-shadow: 0 2px 40px 10px #6d6e6e;
   background: #ffffff;
-  top: 150px;
+  top: 255px;
 }
 
 .form-show {
@@ -1067,7 +1075,7 @@ li.catalog-item:hover .block-price {
 .form .button:active {
   color: #e48789;
   background: #d7373b;
-  box-shadow: 0 5px 0 #c13135 inset;
+  box-shadow: 0 2px 0 #c13135 inset;
 }
 
 .form .button {
@@ -1078,10 +1086,10 @@ li.catalog-item:hover .block-price {
 }
 
 .form-title {
-  margin: 0 0 45px 0;
+  margin: 0 0 32px 0;
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .form-text {
@@ -1093,11 +1101,11 @@ li.catalog-item:hover .block-price {
 }
 
 .form-text input {
-  line-height: 50px;
+  line-height: 46px;
 }
 
 .form-text textarea {
-  height: 118px;
+  height: 100px;
 }
 
 .form-text label {
@@ -1106,7 +1114,7 @@ li.catalog-item:hover .block-price {
 
 textarea,
 input {
-  border: 3px solid #d7dcde;
+  border: 2px solid #d7dcde;
   color: #d7dcde;
   border-radius: 5px;
   padding: 0 15px;
@@ -1128,16 +1136,15 @@ input:focus {
 textarea {
   padding-top: 15px;
   font-size: 18px;
-  margin-bottom: 45px;
 }
 
 .modal-close {
   position: absolute;
-  width: 30px;
+  width: 25px;
   height: 30px;
   background: #ffffff;
   border: 0;
-  top: 90px;
+  top: 75px;
   right: 90px;
   outline: none;
 }
@@ -1148,7 +1155,7 @@ textarea {
   position: absolute;
   top: 10px;
   left: 2px;
-  width: 30px;
+  width: 28px;
   height: 3px;
   background-color: #fecccd;
 }
