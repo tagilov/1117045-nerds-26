@@ -1007,7 +1007,7 @@ li.catalog-item:hover .block-price {
   padding: 70px 100px;
   box-shadow: 0 2px 40px 10px #6d6e6e;
   background: #ffffff;
-  top: 200px;
+  top: 0;
 }
 
 .form-show {
