@@ -227,9 +227,6 @@ li {
   clip: rect(0, 0, 0, 0);
 }
 
-.slide-active {
-  display: block;
-}
 
 .slider {
   background: #eeeeee;
@@ -242,8 +239,7 @@ li {
 
 .slider h1 {
   margin: 0;
-  padding: 0;
-  margin-top: 70px;
+  padding: 70px 0 0 0; 
   margin-bottom: 28px;
   font-weight: 500;
 }
@@ -257,6 +253,10 @@ li {
 
 .slider-content {
   display: none;
+}
+
+.slider-content:nth-child(1) {
+  display: block;
 }
 
 .slider-content:nth-child(1) {
@@ -277,9 +277,6 @@ li {
   background-position: 100% 20px;
 }
 
-.slide-active {
-  display: flex;
-}
 
 .slider-title {
   font-size: 55px;
@@ -662,8 +659,8 @@ sup {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 5px;
+  height: 5px;
   padding: 0;
   border: 8px solid #ffffff;
   background-color: #ababab;
@@ -1010,7 +1007,7 @@ li.catalog-item:hover .block-price {
   padding: 70px 100px;
   box-shadow: 0 2px 40px 10px #6d6e6e;
   background: #ffffff;
-  top: 255px;
+  top: 200px;
 }
 
 .form-show {

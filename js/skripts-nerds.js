@@ -22,7 +22,7 @@ link.addEventListener("click", function(evt) {
   if (storage) {
     fullName.value = storage;
     mail.focus();
-  }
+  } 
 });
 
 close.addEventListener("click", function(evt) {
