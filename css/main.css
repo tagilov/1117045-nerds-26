@@ -39,7 +39,7 @@ li {
 .button:active {
   color: #e48789;
   background: #d7373b;
-  box-shadow: 0 2px 0 #c13135 inset;
+  box-shadow: 0 4px 0 #c13135 inset;
 }
 
 .nav ul {
@@ -49,7 +49,7 @@ li {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 25px;
 }
 
@@ -74,8 +74,12 @@ li {
 .nav-list {
   font-weight: 700;
   display: flex;
-  justify-content: space-between;
-  min-width: 440px;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.nav-item {
+  margin-right: 47px;
 }
 
 .nav-link {
@@ -99,8 +103,8 @@ li {
 
 .nav-cart {
   position: relative;
-  margin-left: 238px;
-  padding-left: 45px;
+  padding-left: 49px;
+  margin-left: 175px;
 }
 
 .nav-cart::before {
@@ -183,11 +187,8 @@ li {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 104px;
   width: 90px;
-  height: 18px;
   text-align: center;
-  font-size: 0;
   transform: translateX(-50%);
   top: 310px;
   left: 50%;
@@ -227,7 +228,6 @@ li {
   clip: rect(0, 0, 0, 0);
 }
 
-
 .slider {
   background: #eeeeee;
   position: relative;
@@ -239,7 +239,7 @@ li {
 
 .slider h1 {
   margin: 0;
-  padding: 70px 0 0 0; 
+  padding: 70px 0 0 0;
   margin-bottom: 28px;
   font-weight: 500;
 }
@@ -277,7 +277,6 @@ li {
   background-position: 100% 20px;
 }
 
-
 .slider-title {
   font-size: 55px;
   line-height: 55px;
@@ -307,14 +306,18 @@ li {
 }
 
 .services .container {
-  height: 350px;
   display: flex;
-  margin-bottom: 78px;
+  flex-wrap: wrap;
 }
 
 .services-item {
   width: 300px;
   margin-right: 100px;
+  margin-bottom: 78px;
+}
+
+.services-item:nth-child(3) {
+  margin: 0;
 }
 
 .services-title {
@@ -327,12 +330,14 @@ li {
 }
 
 .services-text {
-  margin-bottom: 47px;
+  margin-bottom: 35px;
   color: #283136;
 }
 
 .services .button {
+  display: inline-block;
   padding: 13px 39px 13px 39px;
+  margin-bottom: 5px;
 }
 
 .services .button:hover {
@@ -393,7 +398,7 @@ li {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .about-list {
@@ -423,7 +428,7 @@ li {
 
 .about-item {
   margin-top: 15px;
-  padding-left: 10px;
+  padding-left: 8px;
   padding-bottom: 3px;
 }
 
@@ -490,15 +495,19 @@ sup {
 }
 
 .logo-list {
-  height: 180px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   border-top: solid 2px #eeeeee;
   border-bottom: solid 2px #eeeeee;
 }
 
 .logo-img {
   opacity: 0.2;
+  margin-right: 40px;
+}
+
+.logo-img:nth-child(4) {
+  margin: 0;
 }
 
 .logo-img:hover {
@@ -637,7 +646,7 @@ sup {
   position: relative;
   height: 41px;
   margin-bottom: 15px;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
@@ -659,8 +668,8 @@ sup {
   position: absolute;
   top: 31px;
   left: 0;
-  width: 5px;
-  height: 5px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid #ffffff;
   background-color: #ababab;
@@ -674,7 +683,7 @@ sup {
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 162px;
 }
 
 .price-controls {
@@ -857,21 +866,12 @@ sup {
   margin: 0;
 }
 
-.catalog-img-head {
-  display: block;
-  color: #000000;
-  opacity: 0.12;
-}
-
-li.catalog-item:hover .catalog-img-head {
-  opacity: 1;
-}
-
 .catalog-img {
   display: block;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus-within {
   box-shadow: 0 2px 5px 5px #d2d2d2;
 }
 
@@ -889,6 +889,20 @@ li.catalog-item:hover .block-price {
   margin-bottom: 33px;
 }
 
+.catalog-item::before {
+  position: relative;
+  content: url("../img/browser.svg");
+  color: #4d4d4d;
+  opacity: 0.12;
+  display: block;
+  height: 40px;
+}
+
+.catalog-item:hover::before,
+.catalog-item:focus-within::before {
+  opacity: 1;
+}
+
 .pagination-list {
   display: flex;
   padding: 0;
@@ -898,9 +912,7 @@ li.catalog-item:hover .block-price {
 }
 
 .pagination-item {
-  width: 50px;
-  height: 50px;
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 .pagination-list a {
@@ -1007,7 +1019,7 @@ li.catalog-item:hover .block-price {
   padding: 70px 100px;
   box-shadow: 0 2px 40px 10px #6d6e6e;
   background: #ffffff;
-  top: 0;
+  top: 150px;
 }
 
 .form-show {
