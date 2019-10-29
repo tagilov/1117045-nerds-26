@@ -130,11 +130,24 @@ li {
 .radio-text {
   position: relative;
   padding-left: 38px;
-  color: #363f43;
+  color: #4d4d4d;
+  opacity: 0.4;
 }
 
 .radio-text:hover::before {
   opacity: 1;
+}
+
+.radio-text:hover {
+  opacity: 1;
+}
+
+.radio-text:disabled::before {
+  opacity: 0.1;
+}
+
+.radio-text:disabled {
+  opacity: 0.1;
 }
 
 .radio-text::before {
@@ -162,10 +175,21 @@ li {
 .checkbox-text {
   position: relative;
   padding-left: 38px;
-  color: #363f43;
+  color: #4d4d4d;
+  opacity: 0.4;
 }
 
 .checkbox-text:hover::before {
+  opacity: 1;
+}
+
+.checkbox-text:hover {
+  opacity: 1;
+}
+
+
+
+.checkbox-text:disabled {
   opacity: 1;
 }
 
@@ -556,7 +580,7 @@ sup {
   line-height: 18px;
   color: #666666;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .contacts .button {
