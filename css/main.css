@@ -260,7 +260,7 @@ li {
 .slider h1 {
   margin: 0;
   padding: 70px 0 0 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   font-weight: 500;
 }
 
@@ -314,7 +314,7 @@ li {
   line-height: 18px;
   margin-bottom: 80px;
   max-width: 300px;
-  min-width: 240px;
+  min-width: 235px;
 }
 
 .slider .button:hover {
@@ -349,7 +349,7 @@ li {
 
 .services-title {
   margin-top: 17px;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -357,7 +357,7 @@ li {
 }
 
 .services-text {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   color: #283136;
 }
 
@@ -365,7 +365,8 @@ li {
   display: inline-block;
   margin-bottom: 5px;
   max-width: 220px;
-  min-width: 160px;
+  min-width: 158px;
+  padding: 14px 0;
 }
 
 .services .button:hover {
@@ -426,7 +427,7 @@ li {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 40px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .about-list {
@@ -439,11 +440,11 @@ li {
   border-top: solid 2px #eeeeee;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .about-block h2 {
-  margin-top: 72px;
+  margin-top: 70px;
 }
 
 .about-block p {
@@ -456,8 +457,8 @@ li {
 
 .about-item {
   margin-top: 15px;
-  padding-left: 8px;
-  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-bottom: 4px;
 }
 
 .about-item::before {
@@ -482,8 +483,8 @@ li {
 }
 
 .info-img {
-  padding-top: 40px;
-  margin-bottom: 28px;
+  padding-top: 35px;
+  margin-bottom: 30px;
 }
 
 .info-percent {
@@ -514,7 +515,7 @@ sup {
 }
 
 .logo {
-  margin-bottom: 80px;
+  margin-bottom: 73px;
 }
 
 .logo ul {
@@ -565,14 +566,14 @@ sup {
   line-height: 30px;
   font-weight: bold;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .contacts-text {
   line-height: 18px;
   color: #666666;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .contacts .button {
