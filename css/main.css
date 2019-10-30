@@ -944,6 +944,12 @@ li.catalog-item:hover .block-price {
   margin-right: 10px;
 }
 
+.pagination-next {
+  width: 260px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .pagination-list a {
   color: black;
   float: left;
@@ -956,6 +962,11 @@ li.catalog-item:hover .block-price {
   border-radius: 3px;
 }
 
+a.pagination-active {
+  background: #ffffff;
+  border-color: #dbdbdb;
+}
+
 .next a {
   line-height: 18px;
   text-transform: uppercase;
@@ -964,11 +975,7 @@ li.catalog-item:hover .block-price {
   border: 2px solid transparent;
 }
 
-.pagination-active:hover {
-  background: #dfdfdf;
-}
-
-.pagination-next:hover {
+.pagination-item a:hover {
   background: #dfdfdf;
 }
 
