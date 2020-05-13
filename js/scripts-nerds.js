@@ -9,6 +9,24 @@ var storage = localStorage.getItem("fullName");
 var isStorageSupport = true;
 var storage = "";
 
+var colors = ["#F08080", "#FFB6C1", "#FFFF00", "#EE82EE"];
+var i = 0;
+
+function changeColor() {
+  document.querySelector('.header').style.background = colors[i];
+  i ++;
+  if(i > colors.length - 1){
+    i = 0;
+  }
+};
+
+setInterval(changeColor, 5000);
+
+
+
+
+
+
 try {
   storage = localStorage.getItem("fullName");
 } catch (err) {
